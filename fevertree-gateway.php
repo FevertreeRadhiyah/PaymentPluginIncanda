@@ -206,7 +206,7 @@ function fevertree_init_gateway_class()
                          var orderTotal = document.getElementById('orderTotal').value;
                         
                        
-                         var ajaxurl = '../wp-content/plugins/woocommerce-gateway-fevertree/Submit.php',
+                         var ajaxurl = '../wp-content/plugins/fevertree-gateway/Submit.php/',
                          data =  {'action': clickBtnValue,'finalTotal': orderTotal,'idNumber':cardIDNumber,'userName':username,'Password':password  };
                          $.post(ajaxurl, data, function (response) {
                        // alert($.isNumeric(response));
@@ -266,7 +266,7 @@ function fevertree_init_gateway_class()
                         else
                         {
                    
-                        var ajaxurl = '../wp-content/plugins/woocommerce-gateway-fevertree/Submit.php',
+                        var ajaxurl = '../wp-content/plugins/fevertree-gateway/Submit.php/',
                         data =  {'action': clickBtnValue,'finalTotal': orderTotal,'idNumber' :cardIDNumber,'userName' :username,'Password':password,'OTP':OTPInput };
                         $.post(ajaxurl, data, function (response) {
                        
